@@ -13,6 +13,215 @@
 </head>
 <body>
 
+<!-- basic dropdown -->
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>The .dropdown class is used to indicate a dropdown menu.</p>
+    <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+    <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- dropdown divider -->
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>The .divider class is used to separate links inside the dropdown menu:</p>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- dropdown header -->
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-header">Dropdown header 1</li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Dropdown header 2</li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- disable an item -->
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>The .disabled class is used to disable an item in the dropdown menu:</p>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li class="disabled"><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- dropdown position -->
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>Add the .dropdown-menu-right class to .dropdown-menu to right-align the dropdown menu:</p>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- dropup -->
+<div class="container">
+    <h2>Dropdowns</h2>
+    <p>The .dropup class makes the dropdown menu expand upwards instead of downwards:</p>
+    <div class="dropup">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropup Example
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- dropdown accessibility -->
+<div class="container">
+    <h2>Dropdowns Accessibility</h2>
+    <p>The .dropdown class is used to indicate a dropdown menu.</p>
+    <p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+<hr/>
+
+<!-- panels -->
+<div class="container">
+    <h2>Basic Panel</h2>
+    <div class="panel panel-default">
+        <div class="panel-body">A Basic Panel</div>
+    </div>
+</div>
+
+<!-- panel heading -->
+<div class="container">
+    <h2>Panel Heading</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel Heading</div>
+        <div class="panel-body">Panel Content</div>
+    </div>
+</div>
+
+<!-- panel footer -->
+<div class="container">
+    <h2>Panel Footer</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel Heading</div>
+        <div class="panel-body">Panel Content</div>
+        <div class="panel-footer">Panel Footer</div>
+    </div>
+</div>
+
+<!-- panel group -->
+<div class="container">
+    <h2>Panel Group</h2>
+    <p>The panel-group class clears the bottom-margin. Try to remove the class and see what happens.</p>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel Header</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel Header</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel Header</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+    </div>
+</div>
+
+<!-- panels with contextual classes -->
+<div class="container">
+    <h2>Panels with Contextual Classes</h2>
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">Panel with panel-default class</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">Panel with panel-primary class</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+
+        <div class="panel panel-success">
+            <div class="panel-heading">Panel with panel-success class</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">Panel with panel-info class</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+
+        <div class="panel panel-warning">
+            <div class="panel-heading">Panel with panel-warning class</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">Panel with panel-danger class</div>
+            <div class="panel-body">Panel Content</div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+
 <!-- basic list group -->
 <div class="container">
     <h2>Basic List Group</h2>
